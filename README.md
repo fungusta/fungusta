@@ -6,7 +6,7 @@ I AM...
 
 - **Student in NUS**
 - **Studying Computer Science**
-- **Aspiring Game Developer**
+- **Aspiring Game Developer/Software Engineer**
 
 Some of my projects are...
 - [StiksTheGame](https://github.com/fungusta/StiksTheGame)

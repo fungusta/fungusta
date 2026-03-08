@@ -22,9 +22,9 @@ CAT_SVG_PATH = os.path.join(ASSETS_DIR, "cat.svg")
 PET_W         = 120
 PET_H         = 120
 PETS_PER_ROW  = 5
-PADDING       = 16
-NAME_LABEL_H  = 20   # space above cat for repo name
-LEVEL_LABEL_H = 20   # space below cat for level
+PADDING       = 20
+NAME_LABEL_H  = 28   # space above cat for repo name
+LEVEL_LABEL_H = 26   # space below cat for level
 
 # Original stroke colors in cat.svg that we replace per scheme
 _ORIG_OUTLINE = "#9c5a3c"
@@ -80,7 +80,7 @@ def embed_svg(
         orig_w = orig_h = 100.0
 
     scale = min(PET_W / orig_w, PET_H / orig_h)
-    short_name = name if len(name) <= 14 else name[:13] + "…"
+    short_name = name if len(name) <= 16 else name[:15] + "…"
 
     anim_dur = round(random.uniform(2.5, 4.0), 2)
     anim_begin = round(random.uniform(0.0, 2.0), 2)
@@ -96,8 +96,8 @@ def embed_svg(
 
     return (
         f'<g transform="translate({x},{y})">\n'
-        f'  <text x="{PET_W // 2}" y="14" text-anchor="middle" '
-        f'font-size="7.5" fill="#bbb" font-family="monospace">{short_name}</text>\n'
+        f'  <text x="{PET_W // 2}" y="{NAME_LABEL_H - 8}" text-anchor="middle" '
+        f'font-size="11" font-weight="600" fill="#e0e0e0" font-family="monospace">{short_name}</text>\n'
         f'  <g transform="translate(0,{cat_y})" style="--outline:{outline}; --fur:{fur};">\n'
         f'    <animateTransform attributeName="transform" type="translate" '
         f'additive="sum" values="0,0; 0,-5; 0,0" dur="{anim_dur}s" '
@@ -105,8 +105,8 @@ def embed_svg(
         f'keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>\n'
         f'    <g transform="scale({scale:.4f})">{inner}</g>\n'
         f'  </g>\n'
-        f'  <text x="{PET_W // 2}" y="{cat_y + PET_H + 14}" text-anchor="middle" '
-        f'font-size="7.5" fill="#bbb" font-family="monospace">{level_text}</text>\n'
+        f'  <text x="{PET_W // 2}" y="{cat_y + PET_H + 18}" text-anchor="middle" '
+        f'font-size="11" fill="#888" font-family="monospace">{level_text}</text>\n'
         f'</g>'
     )
 

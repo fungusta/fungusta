@@ -34,6 +34,6 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add pets.svg
+          git add pets.svg README.md
           git diff --cached --quiet || git commit -m "chore: update pets [skip ci]"
           git push

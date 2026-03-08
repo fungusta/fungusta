@@ -1,16 +1,22 @@
-# Peter Joseph Fung Yu Ren
+# Peter Fung
 
 ![My GitHub Pets](./pets.svg)
 
-Hi! I'm Peter
+Hi, I'm Peter 👋
 
-I AM... 
+I enjoy building software, experimenting with new ideas, and turning small projects into something fun and interactive.
 
-- **Student in NUS**
-- **Studying Computer Science**
-- **Aspiring Game Developer/Software Engineer**
+## GitHub Pets
 
-Some of my projects are...
-- [StiksTheGame](https://github.com/fungusta/StiksTheGame)
-- [TopDownRacing](https://github.com/fungusta/TopDownRacing)
-- [FABook](https://github.com/fungusta/FABook)
+Each repository in this profile has a **cat pet** that grows based on the number of commits in that repo.
+
+More commits → higher level cat.
+
+This project generates the SVG automatically using the GitHub API.
+
+### Top cats
+
+These are my three highest-level cats right now:
+
+<!-- TOP_PETS_START -->
+<!-- TOP_PETS_END -->

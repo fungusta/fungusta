@@ -200,6 +200,46 @@ def build_combined_svg(pets: list[dict], cat_svg: str) -> str:
     parts.append("</svg>")
     return "\n".join(parts)
 
+
+def update_readme_with_top_pets(pets: list[dict], readme_path: str = "README.md") -> None:
+    """Update README.md section with the top 3 highest-level cats."""
+    if not os.path.exists(readme_path):
+        return
+
+    start_marker = "<!-- TOP_PETS_START -->"
+    end_marker = "<!-- TOP_PETS_END -->"
+
+    with open(readme_path, "r", encoding="utf-8") as f:
+        readme = f.read()
+
+    try:
+        start_idx = readme.index(start_marker)
+        end_idx = readme.index(end_marker, start_idx)
+    except ValueError:
+        # Markers not found; leave README unchanged
+        return
+
+    top_pets = pets[:3]
+
+    lines: list[str] = [start_marker]
+    if not top_pets:
+        lines.append("- _No repositories found yet._")
+    else:
+        for pet in top_pets:
+            name = pet["name"]
+            commits = pet.get("commits", 0)
+            url = pet.get("url") or f"https://github.com/{USERNAME}/{name}"
+            lines.append(f"- **[{name}]({url})** – level {commits}")
+    lines.append(end_marker)
+
+    block = "\n".join(lines)
+
+    new_readme = readme[:start_idx] + block + readme[end_idx + len(end_marker) :]
+
+    with open(readme_path, "w", encoding="utf-8") as f:
+        f.write(new_readme)
+
+
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main(output_path: str = "pets.svg") -> None:
@@ -217,9 +257,18 @@ def main(output_path: str = "pets.svg") -> None:
             continue
         count = get_commit_count(repo["full_name"])
         print(f"  {name}: {count} commits")
-        pets.append({"name": name, "commits": count})
+        pets.append(
+            {
+                "name": name,
+                "commits": count,
+                "url": repo.get("html_url"),
+            }
+        )
 
     pets.sort(key=lambda p: p["commits"], reverse=True)
+
+    update_readme_with_top_pets(pets)
+    print("✅ Updated README with top cats (if markers present)")
 
     svg = build_combined_svg(pets, cat_svg)
     with open(output_path, "w") as f:

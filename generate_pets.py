@@ -36,7 +36,7 @@ _ORIG_FUR     = "#ff7e00"
 CAT_COLOR_SCHEMES: dict[str, dict[str, str]] = {
     "orange":  {"outline": "#9c5a3c", "fur": "#ff7e00"},   # original
     "grey":    {"outline": "#555555", "fur": "#aaaaaa"},
-    "black":   {"outline": "#111111", "fur": "#333333"},
+    "black":   {"outline": "#000000", "fur": "#333333"},
     "white":   {"outline": "#999999", "fur": "#eeeeee"},
     "siamese": {"outline": "#6d4c41", "fur": "#f5e0c3"},
     "brown":   {"outline": "#5c3317", "fur": "#9b5e2a"},

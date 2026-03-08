@@ -1,126 +1,236 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="696" height="368">
 <rect width="696" height="368" fill="#0d1117" rx="12"/>
-<defs>
-<filter id="cat-gray"><feColorMatrix type="saturate" values="0"/></filter>
-<filter id="cat-brown"><feColorMatrix type="hueRotate" values="-20"/><feColorMatrix type="saturate" values="0.5"/><feComponentTransfer><feFuncR type="linear" slope="0.85"/><feFuncG type="linear" slope="0.72"/><feFuncB type="linear" slope="0.60"/></feComponentTransfer></filter>
-<filter id="cat-black"><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncR type="linear" slope="0.22"/><feFuncG type="linear" slope="0.22"/><feFuncB type="linear" slope="0.22"/></feComponentTransfer></filter>
-<filter id="cat-cream"><feColorMatrix type="saturate" values="0.25"/><feComponentTransfer><feFuncR type="linear" slope="1.05" intercept="0.06"/><feFuncG type="linear" slope="0.95" intercept="0.03"/><feFuncB type="linear" slope="0.80"/></feComponentTransfer></filter>
-<filter id="cat-red"><feColorMatrix type="hueRotate" values="-30"/><feColorMatrix type="saturate" values="1.2"/></filter>
-</defs>
 <g transform="translate(16,16)">
   <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">AlertBot</text>
   <g transform="translate(0,20)">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.98s" begin="0.05s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
-    <g transform="scale(6.0000)" filter="url(#cat-cream)"><metadata>Made with Pixels to Svg https://codepen.io/shshaw/pen/XbxvNj</metadata>
-<path stroke="#9c5a3c" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
-<path stroke="#ff7e00" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
-<path stroke="#ffa3b1" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
-<path stroke="#ffffff" d="M8 6h1M10 6h1M8 9h1M10 9h1M7 10h5M5 15h1M7 15h1M11 15h1M13 15h1" />
-<path stroke="#000000" d="M3 8h2M6 8h2M11 8h2M14 8h2M6 9h2M11 9h2M3 10h2M14 10h2" /></g>
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.35s" begin="1.68s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+    <g transform="scale(6.0000)"><style>
+:root {
+  --outline: #222222;
+  --fur: #3b3b3b;
+  --nose: #ffa3b1;
+  --highlight: #ffffff;
+  --eyes: #000000;
+}
+</style>
+
+<path stroke="var(--outline)" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
+
+<path stroke="var(--fur)" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
+
+<path stroke="var(--nose)" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
+
+<path stroke="var(--highlight)" d="M8 6h1M10 6h1M8 9h1M10 9h1M7 10h5M5 15h1M7 15h1M11 15h1M13 15h1" />
+
+<path stroke="var(--eyes)" d="M3 8h2M6 8h2M11 8h2M14 8h2M6 9h2M11 9h2M3 10h2M14 10h2" /></g>
   </g>
   <text x="60" y="154" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">Lv 5</text>
 </g>
 <g transform="translate(152,16)">
   <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">ProjectA</text>
   <g transform="translate(0,20)">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.67s" begin="1.02s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
-    <g transform="scale(6.0000)"><metadata>Made with Pixels to Svg https://codepen.io/shshaw/pen/XbxvNj</metadata>
-<path stroke="#9c5a3c" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
-<path stroke="#ff7e00" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
-<path stroke="#ffa3b1" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
-<path stroke="#ffffff" d="M8 6h1M10 6h1M8 9h1M10 9h1M7 10h5M5 15h1M7 15h1M11 15h1M13 15h1" />
-<path stroke="#000000" d="M3 8h2M6 8h2M11 8h2M14 8h2M6 9h2M11 9h2M3 10h2M14 10h2" /></g>
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="2.97s" begin="1.74s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+    <g transform="scale(6.0000)"><style>
+:root {
+  --outline: #222222;
+  --fur: #3b3b3b;
+  --nose: #ffa3b1;
+  --highlight: #ffffff;
+  --eyes: #000000;
+}
+</style>
+
+<path stroke="var(--outline)" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
+
+<path stroke="var(--fur)" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
+
+<path stroke="var(--nose)" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
+
+<path stroke="var(--highlight)" d="M8 6h1M10 6h1M8 9h1M10 9h1M7 10h5M5 15h1M7 15h1M11 15h1M13 15h1" />
+
+<path stroke="var(--eyes)" d="M3 8h2M6 8h2M11 8h2M14 8h2M6 9h2M11 9h2M3 10h2M14 10h2" /></g>
   </g>
   <text x="60" y="154" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">Lv 1</text>
 </g>
 <g transform="translate(288,16)">
   <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">RainOracle</text>
   <g transform="translate(0,20)">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.26s" begin="1.11s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
-    <g transform="scale(6.0000)" filter="url(#cat-brown)"><metadata>Made with Pixels to Svg https://codepen.io/shshaw/pen/XbxvNj</metadata>
-<path stroke="#9c5a3c" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
-<path stroke="#ff7e00" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
-<path stroke="#ffa3b1" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
-<path stroke="#ffffff" d="M8 6h1M10 6h1M8 9h1M10 9h1M7 10h5M5 15h1M7 15h1M11 15h1M13 15h1" />
-<path stroke="#000000" d="M3 8h2M6 8h2M11 8h2M14 8h2M6 9h2M11 9h2M3 10h2M14 10h2" /></g>
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.29s" begin="0.95s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+    <g transform="scale(6.0000)"><style>
+:root {
+  --outline: #555555;
+  --fur: #bdbdbd;
+  --nose: #ffa3b1;
+  --highlight: #ffffff;
+  --eyes: #000000;
+}
+</style>
+
+<path stroke="var(--outline)" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
+
+<path stroke="var(--fur)" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
+
+<path stroke="var(--nose)" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
+
+<path stroke="var(--highlight)" d="M8 6h1M10 6h1M8 9h1M10 9h1M7 10h5M5 15h1M7 15h1M11 15h1M13 15h1" />
+
+<path stroke="var(--eyes)" d="M3 8h2M6 8h2M11 8h2M14 8h2M6 9h2M11 9h2M3 10h2M14 10h2" /></g>
   </g>
   <text x="60" y="154" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">Lv 11</text>
 </g>
 <g transform="translate(424,16)">
   <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">StiksTheGame</text>
   <g transform="translate(0,20)">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="2.6s" begin="0.3s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
-    <g transform="scale(6.0000)" filter="url(#cat-brown)"><metadata>Made with Pixels to Svg https://codepen.io/shshaw/pen/XbxvNj</metadata>
-<path stroke="#9c5a3c" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
-<path stroke="#ff7e00" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
-<path stroke="#ffa3b1" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
-<path stroke="#ffffff" d="M8 6h1M10 6h1M8 9h1M10 9h1M7 10h5M5 15h1M7 15h1M11 15h1M13 15h1" />
-<path stroke="#000000" d="M3 8h2M6 8h2M11 8h2M14 8h2M6 9h2M11 9h2M3 10h2M14 10h2" /></g>
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.19s" begin="1.67s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+    <g transform="scale(6.0000)"><style>
+:root {
+  --outline: #6d4c41;
+  --fur: #f5e0c3;
+  --nose: #ffa3b1;
+  --highlight: #ffffff;
+  --eyes: #000000;
+}
+</style>
+
+<path stroke="var(--outline)" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
+
+<path stroke="var(--fur)" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
+
+<path stroke="var(--nose)" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
+
+<path stroke="var(--highlight)" d="M8 6h1M10 6h1M8 9h1M10 9h1M7 10h5M5 15h1M7 15h1M11 15h1M13 15h1" />
+
+<path stroke="var(--eyes)" d="M3 8h2M6 8h2M11 8h2M14 8h2M6 9h2M11 9h2M3 10h2M14 10h2" /></g>
   </g>
   <text x="60" y="154" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">Lv 110</text>
 </g>
 <g transform="translate(560,16)">
   <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">TopDownRacing</text>
   <g transform="translate(0,20)">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="2.52s" begin="1.75s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
-    <g transform="scale(6.0000)"><metadata>Made with Pixels to Svg https://codepen.io/shshaw/pen/XbxvNj</metadata>
-<path stroke="#9c5a3c" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
-<path stroke="#ff7e00" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
-<path stroke="#ffa3b1" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
-<path stroke="#ffffff" d="M8 6h1M10 6h1M8 9h1M10 9h1M7 10h5M5 15h1M7 15h1M11 15h1M13 15h1" />
-<path stroke="#000000" d="M3 8h2M6 8h2M11 8h2M14 8h2M6 9h2M11 9h2M3 10h2M14 10h2" /></g>
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.06s" begin="0.45s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+    <g transform="scale(6.0000)"><style>
+:root {
+  --outline: #222222;
+  --fur: #3b3b3b;
+  --nose: #ffa3b1;
+  --highlight: #ffffff;
+  --eyes: #000000;
+}
+</style>
+
+<path stroke="var(--outline)" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
+
+<path stroke="var(--fur)" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
+
+<path stroke="var(--nose)" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
+
+<path stroke="var(--highlight)" d="M8 6h1M10 6h1M8 9h1M10 9h1M7 10h5M5 15h1M7 15h1M11 15h1M13 15h1" />
+
+<path stroke="var(--eyes)" d="M3 8h2M6 8h2M11 8h2M14 8h2M6 9h2M11 9h2M3 10h2M14 10h2" /></g>
   </g>
   <text x="60" y="154" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">Lv 13</text>
 </g>
 <g transform="translate(16,192)">
   <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">epat_cicd_nov5</text>
   <g transform="translate(0,20)">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.34s" begin="1.49s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
-    <g transform="scale(6.0000)"><metadata>Made with Pixels to Svg https://codepen.io/shshaw/pen/XbxvNj</metadata>
-<path stroke="#9c5a3c" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
-<path stroke="#ff7e00" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
-<path stroke="#ffa3b1" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
-<path stroke="#ffffff" d="M8 6h1M10 6h1M8 9h1M10 9h1M7 10h5M5 15h1M7 15h1M11 15h1M13 15h1" />
-<path stroke="#000000" d="M3 8h2M6 8h2M11 8h2M14 8h2M6 9h2M11 9h2M3 10h2M14 10h2" /></g>
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.03s" begin="0.54s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+    <g transform="scale(6.0000)"><style>
+:root {
+  --outline: #555555;
+  --fur: #bdbdbd;
+  --nose: #ffa3b1;
+  --highlight: #ffffff;
+  --eyes: #000000;
+}
+</style>
+
+<path stroke="var(--outline)" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
+
+<path stroke="var(--fur)" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
+
+<path stroke="var(--nose)" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
+
+<path stroke="var(--highlight)" d="M8 6h1M10 6h1M8 9h1M10 9h1M7 10h5M5 15h1M7 15h1M11 15h1M13 15h1" />
+
+<path stroke="var(--eyes)" d="M3 8h2M6 8h2M11 8h2M14 8h2M6 9h2M11 9h2M3 10h2M14 10h2" /></g>
   </g>
   <text x="60" y="154" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">Lv 8</text>
 </g>
 <g transform="translate(152,192)">
   <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">mcp-servers</text>
   <g transform="translate(0,20)">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.84s" begin="0.91s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
-    <g transform="scale(6.0000)" filter="url(#cat-red)"><metadata>Made with Pixels to Svg https://codepen.io/shshaw/pen/XbxvNj</metadata>
-<path stroke="#9c5a3c" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
-<path stroke="#ff7e00" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
-<path stroke="#ffa3b1" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
-<path stroke="#ffffff" d="M8 6h1M10 6h1M8 9h1M10 9h1M7 10h5M5 15h1M7 15h1M11 15h1M13 15h1" />
-<path stroke="#000000" d="M3 8h2M6 8h2M11 8h2M14 8h2M6 9h2M11 9h2M3 10h2M14 10h2" /></g>
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.99s" begin="1.74s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+    <g transform="scale(6.0000)"><style>
+:root {
+  --outline: #222222;
+  --fur: #3b3b3b;
+  --nose: #ffa3b1;
+  --highlight: #ffffff;
+  --eyes: #000000;
+}
+</style>
+
+<path stroke="var(--outline)" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
+
+<path stroke="var(--fur)" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
+
+<path stroke="var(--nose)" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
+
+<path stroke="var(--highlight)" d="M8 6h1M10 6h1M8 9h1M10 9h1M7 10h5M5 15h1M7 15h1M11 15h1M13 15h1" />
+
+<path stroke="var(--eyes)" d="M3 8h2M6 8h2M11 8h2M14 8h2M6 9h2M11 9h2M3 10h2M14 10h2" /></g>
   </g>
   <text x="60" y="154" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">Lv 2</text>
 </g>
 <g transform="translate(288,192)">
   <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">portfolio</text>
   <g transform="translate(0,20)">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.49s" begin="1.88s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
-    <g transform="scale(6.0000)" filter="url(#cat-cream)"><metadata>Made with Pixels to Svg https://codepen.io/shshaw/pen/XbxvNj</metadata>
-<path stroke="#9c5a3c" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
-<path stroke="#ff7e00" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
-<path stroke="#ffa3b1" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
-<path stroke="#ffffff" d="M8 6h1M10 6h1M8 9h1M10 9h1M7 10h5M5 15h1M7 15h1M11 15h1M13 15h1" />
-<path stroke="#000000" d="M3 8h2M6 8h2M11 8h2M14 8h2M6 9h2M11 9h2M3 10h2M14 10h2" /></g>
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="2.96s" begin="0.44s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+    <g transform="scale(6.0000)"><style>
+:root {
+  --outline: #555555;
+  --fur: #bdbdbd;
+  --nose: #ffa3b1;
+  --highlight: #ffffff;
+  --eyes: #000000;
+}
+</style>
+
+<path stroke="var(--outline)" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
+
+<path stroke="var(--fur)" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
+
+<path stroke="var(--nose)" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
+
+<path stroke="var(--highlight)" d="M8 6h1M10 6h1M8 9h1M10 9h1M7 10h5M5 15h1M7 15h1M11 15h1M13 15h1" />
+
+<path stroke="var(--eyes)" d="M3 8h2M6 8h2M11 8h2M14 8h2M6 9h2M11 9h2M3 10h2M14 10h2" /></g>
   </g>
   <text x="60" y="154" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">Lv 3</text>
 </g>
 <g transform="translate(424,192)">
   <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">portfolio-page</text>
   <g transform="translate(0,20)">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.16s" begin="1.67s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
-    <g transform="scale(6.0000)" filter="url(#cat-brown)"><metadata>Made with Pixels to Svg https://codepen.io/shshaw/pen/XbxvNj</metadata>
-<path stroke="#9c5a3c" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
-<path stroke="#ff7e00" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
-<path stroke="#ffa3b1" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
-<path stroke="#ffffff" d="M8 6h1M10 6h1M8 9h1M10 9h1M7 10h5M5 15h1M7 15h1M11 15h1M13 15h1" />
-<path stroke="#000000" d="M3 8h2M6 8h2M11 8h2M14 8h2M6 9h2M11 9h2M3 10h2M14 10h2" /></g>
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="2.56s" begin="0.8s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+    <g transform="scale(6.0000)"><style>
+:root {
+  --outline: #777777;
+  --fur: #ffffff;
+  --nose: #ffa3b1;
+  --highlight: #ffffff;
+  --eyes: #000000;
+}
+</style>
+
+<path stroke="var(--outline)" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
+
+<path stroke="var(--fur)" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
+
+<path stroke="var(--nose)" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
+
+<path stroke="var(--highlight)" d="M8 6h1M10 6h1M8 9h1M10 9h1M7 10h5M5 15h1M7 15h1M11 15h1M13 15h1" />
+
+<path stroke="var(--eyes)" d="M3 8h2M6 8h2M11 8h2M14 8h2M6 9h2M11 9h2M3 10h2M14 10h2" /></g>
   </g>
   <text x="60" y="154" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">Lv 39</text>
 </g>

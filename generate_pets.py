@@ -26,41 +26,28 @@ PADDING       = 16
 NAME_LABEL_H  = 20   # space above cat for repo name
 LEVEL_LABEL_H = 20   # space below cat for level
 
-# Cat color variants: filter_id -> SVG filter primitives (None = original orange, no filter)
-CAT_COLOR_FILTERS: dict[str, str | None] = {
-    "orange": None,
-    "gray": (
-        '<feColorMatrix type="saturate" values="0"/>'
-    ),
-    "brown": (
-        '<feColorMatrix type="hueRotate" values="-20"/>'
-        '<feColorMatrix type="saturate" values="0.5"/>'
-        '<feComponentTransfer>'
-        '<feFuncR type="linear" slope="0.85"/>'
-        '<feFuncG type="linear" slope="0.72"/>'
-        '<feFuncB type="linear" slope="0.60"/>'
-        '</feComponentTransfer>'
-    ),
-    "black": (
-        '<feColorMatrix type="saturate" values="0"/>'
-        '<feComponentTransfer>'
-        '<feFuncR type="linear" slope="0.22"/>'
-        '<feFuncG type="linear" slope="0.22"/>'
-        '<feFuncB type="linear" slope="0.22"/>'
-        '</feComponentTransfer>'
-    ),
-    "cream": (
-        '<feColorMatrix type="saturate" values="0.25"/>'
-        '<feComponentTransfer>'
-        '<feFuncR type="linear" slope="1.05" intercept="0.06"/>'
-        '<feFuncG type="linear" slope="0.95" intercept="0.03"/>'
-        '<feFuncB type="linear" slope="0.80"/>'
-        '</feComponentTransfer>'
-    ),
-    "red": (
-        '<feColorMatrix type="hueRotate" values="-30"/>'
-        '<feColorMatrix type="saturate" values="1.2"/>'
-    ),
+# Cat color variants: outline/fur pairs (others stay the same)
+CAT_COLOR_SCHEMES: dict[str, dict[str, str]] = {
+    # Black cat
+    "black": {
+        "outline": "#222222",
+        "fur": "#3b3b3b",
+    },
+    # Grey cat
+    "grey": {
+        "outline": "#555555",
+        "fur": "#bdbdbd",
+    },
+    # White cat
+    "white": {
+        "outline": "#777777",
+        "fur": "#ffffff",
+    },
+    # Siamese cat
+    "siamese": {
+        "outline": "#6d4c41",
+        "fur": "#f5e0c3",
+    },
 }
 
 # ── Load SVG file ──────────────────────────────────────────────────────────────
@@ -78,15 +65,33 @@ def embed_svg(
     y: int,
     name: str,
     level: int | None = None,
-    filter_id: str | None = None,
+    color_scheme: dict[str, str] | None = None,
 ) -> str:
     """
     Embed a cat SVG at (x, y) with:
     - repo name label above the cat
     - slow up-down hover animation on the cat
     - level label below the cat
+    - optional color scheme applied via CSS variables
     """
     raw_svg = re.sub(r'<\?xml[^?]*\?>', '', raw_svg).strip()
+
+    # If a color scheme is provided, override the outline/fur CSS variables
+    if color_scheme is not None:
+        outline = color_scheme.get("outline")
+        fur = color_scheme.get("fur")
+        if outline:
+            raw_svg = re.sub(
+                r"--outline:\s*#[0-9A-Fa-f]{3,6}",
+                f"--outline: {outline}",
+                raw_svg,
+            )
+        if fur:
+            raw_svg = re.sub(
+                r"--fur:\s*#[0-9A-Fa-f]{3,6}",
+                f"--fur: {fur}",
+                raw_svg,
+            )
 
     svg_open_end = raw_svg.index(">") + 1
     svg_close    = raw_svg.rindex("</svg>")
@@ -107,8 +112,6 @@ def embed_svg(
         orig_w = orig_h = 100.0
 
     scale = min(PET_W / orig_w, PET_H / orig_h)
-
-    filter_attr = f' filter="url(#{filter_id})"' if filter_id else ""
     short_name  = name if len(name) <= 14 else name[:13] + "…"
 
     # Randomise duration and start offset so cats don't all hover in sync
@@ -129,7 +132,7 @@ def embed_svg(
         f'additive="sum" values="0,0; 0,-5; 0,0" dur="{anim_dur}s" '
         f'begin="{anim_begin}s" repeatCount="indefinite" calcMode="spline" '
         f'keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>\n'
-        f'    <g transform="scale({scale:.4f})"{filter_attr}>{inner}</g>\n'
+        f'    <g transform="scale({scale:.4f})">{inner}</g>\n'
         f'  </g>\n'
         # ── Level below (fixed — does not oscillate) ──
         f'  <text x="{PET_W // 2}" y="{cat_y + PET_H + 14}" text-anchor="middle" '
@@ -202,15 +205,7 @@ def build_combined_svg(pets: list[dict], cat_svg: str) -> str:
         f'<rect width="{total_w}" height="{total_h}" fill="#0d1117" rx="12"/>',
     ]
 
-    # Emit filter defs for each color variant
-    defs_parts = ["<defs>"]
-    for variant, primitives in CAT_COLOR_FILTERS.items():
-        if primitives is not None:
-            defs_parts.append(f'<filter id="cat-{variant}">{primitives}</filter>')
-    defs_parts.append("</defs>")
-    parts.extend(defs_parts)
-
-    all_variants = list(CAT_COLOR_FILTERS.keys())
+    all_variants = list(CAT_COLOR_SCHEMES.keys())
 
     for i, pet in enumerate(pets):
         col = i % cols
@@ -218,8 +213,8 @@ def build_combined_svg(pets: list[dict], cat_svg: str) -> str:
         x   = PADDING + col * (PET_W + PADDING)
         y   = PADDING + row * (cell_h + PADDING)
 
-        variant   = random.choice(all_variants)
-        filter_id = f"cat-{variant}" if CAT_COLOR_FILTERS[variant] is not None else None
+        variant      = random.choice(all_variants)
+        color_scheme = CAT_COLOR_SCHEMES[variant]
 
         parts.append(
             embed_svg(
@@ -228,7 +223,7 @@ def build_combined_svg(pets: list[dict], cat_svg: str) -> str:
                 y,
                 pet["name"],
                 level=pet.get("commits"),
-                filter_id=filter_id,
+                color_scheme=color_scheme,
             )
         )
 

@@ -1,8 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -0.5 20 20" shape-rendering="crispEdges">
-<metadata>Made with Pixels to Svg https://codepen.io/shshaw/pen/XbxvNj</metadata>
-<path stroke="#9c5a3c" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
-<path stroke="#ff7e00" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
-<path stroke="#ffa3b1" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
-<path stroke="#ffffff" d="M8 6h1M10 6h1M8 9h1M10 9h1M7 10h5M5 15h1M7 15h1M11 15h1M13 15h1" />
-<path stroke="#000000" d="M3 8h2M6 8h2M11 8h2M14 8h2M6 9h2M11 9h2M3 10h2M14 10h2" />
+
+<style>
+:root {
+  --outline: #9c5a3c;
+  --fur: #ff7e00;
+  --nose: #ffa3b1;
+  --highlight: #ffffff;
+  --eyes: #000000;
+}
+</style>
+
+<path stroke="var(--outline)" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
+
+<path stroke="var(--fur)" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
+
+<path stroke="var(--nose)" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
+
+<path stroke="var(--highlight)" d="M8 6h1M10 6h1M8 9h1M10 9h1M7 10h5M5 15h1M7 15h1M11 15h1M13 15h1" />
+
+<path stroke="var(--eyes)" d="M3 8h2M6 8h2M11 8h2M14 8h2M6 9h2M11 9h2M3 10h2M14 10h2" />
+
 </svg>

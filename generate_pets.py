@@ -26,28 +26,20 @@ PADDING       = 16
 NAME_LABEL_H  = 20   # space above cat for repo name
 LEVEL_LABEL_H = 20   # space below cat for level
 
-# Cat color variants: outline/fur pairs (others stay the same)
+# Original stroke colors in cat.svg that we replace per scheme
+_ORIG_OUTLINE = "#9c5a3c"
+_ORIG_FUR     = "#ff7e00"
+
+# Cat color variants: maps original outline/fur strokes to new colors.
+# Pink nose (#ffa3b1), white highlights (#ffffff), and black pupils (#000000)
+# are left unchanged across all variants.
 CAT_COLOR_SCHEMES: dict[str, dict[str, str]] = {
-    # Black cat
-    "black": {
-        "outline": "#222222",
-        "fur": "#3b3b3b",
-    },
-    # Grey cat
-    "grey": {
-        "outline": "#555555",
-        "fur": "#bdbdbd",
-    },
-    # White cat
-    "white": {
-        "outline": "#777777",
-        "fur": "#ffffff",
-    },
-    # Siamese cat
-    "siamese": {
-        "outline": "#6d4c41",
-        "fur": "#f5e0c3",
-    },
+    "orange":  {"outline": "#9c5a3c", "fur": "#ff7e00"},   # original
+    "grey":    {"outline": "#555555", "fur": "#aaaaaa"},
+    "black":   {"outline": "#111111", "fur": "#333333"},
+    "white":   {"outline": "#999999", "fur": "#eeeeee"},
+    "siamese": {"outline": "#6d4c41", "fur": "#f5e0c3"},
+    "brown":   {"outline": "#5c3317", "fur": "#9b5e2a"},
 }
 
 # ── Load SVG file ──────────────────────────────────────────────────────────────
@@ -76,22 +68,12 @@ def embed_svg(
     """
     raw_svg = re.sub(r'<\?xml[^?]*\?>', '', raw_svg).strip()
 
-    # If a color scheme is provided, override the outline/fur CSS variables
+    # Directly swap the stroke hex values that define outline and fur color
     if color_scheme is not None:
-        outline = color_scheme.get("outline")
-        fur = color_scheme.get("fur")
-        if outline:
-            raw_svg = re.sub(
-                r"--outline:\s*#[0-9A-Fa-f]{3,6}",
-                f"--outline: {outline}",
-                raw_svg,
-            )
-        if fur:
-            raw_svg = re.sub(
-                r"--fur:\s*#[0-9A-Fa-f]{3,6}",
-                f"--fur: {fur}",
-                raw_svg,
-            )
+        outline = color_scheme.get("outline", _ORIG_OUTLINE)
+        fur     = color_scheme.get("fur",     _ORIG_FUR)
+        raw_svg = raw_svg.replace(f'stroke="{_ORIG_OUTLINE}"', f'stroke="{outline}"')
+        raw_svg = raw_svg.replace(f'stroke="{_ORIG_FUR}"',     f'stroke="{fur}"')
 
     svg_open_end = raw_svg.index(">") + 1
     svg_close    = raw_svg.rindex("</svg>")
@@ -249,7 +231,7 @@ def main(output_path: str = "pets.svg") -> None:
         print(f"  {name}: {count} commits")
         pets.append({"name": name, "commits": count})
 
-    pets.sort(key=lambda p: p["name"])
+    pets.sort(key=lambda p: p["commits"], reverse=True)
 
     svg = build_combined_svg(pets, cat_svg)
     with open(output_path, "w") as f:

@@ -59,21 +59,7 @@ def embed_svg(
     level: int | None = None,
     color_scheme: dict[str, str] | None = None,
 ) -> str:
-    """
-    Embed a cat SVG at (x, y) with:
-    - repo name label above the cat
-    - slow up-down hover animation on the cat
-    - level label below the cat
-    - optional color scheme applied via CSS variables
-    """
     raw_svg = re.sub(r'<\?xml[^?]*\?>', '', raw_svg).strip()
-
-    # Directly swap the stroke hex values that define outline and fur color
-    if color_scheme is not None:
-        outline = color_scheme.get("outline", _ORIG_OUTLINE)
-        fur     = color_scheme.get("fur",     _ORIG_FUR)
-        raw_svg = raw_svg.replace(f'stroke="{_ORIG_OUTLINE}"', f'stroke="{outline}"')
-        raw_svg = raw_svg.replace(f'stroke="{_ORIG_FUR}"',     f'stroke="{fur}"')
 
     svg_open_end = raw_svg.index(">") + 1
     svg_close    = raw_svg.rindex("</svg>")
@@ -94,29 +80,31 @@ def embed_svg(
         orig_w = orig_h = 100.0
 
     scale = min(PET_W / orig_w, PET_H / orig_h)
-    short_name  = name if len(name) <= 14 else name[:13] + "…"
+    short_name = name if len(name) <= 14 else name[:13] + "…"
 
-    # Randomise duration and start offset so cats don't all hover in sync
-    anim_dur   = round(random.uniform(2.5, 4.0), 2)
+    anim_dur = round(random.uniform(2.5, 4.0), 2)
     anim_begin = round(random.uniform(0.0, 2.0), 2)
 
-    cat_y      = NAME_LABEL_H
+    cat_y = NAME_LABEL_H
     level_text = f"Lv {level}" if level is not None else ""
+
+    outline = _ORIG_OUTLINE
+    fur = _ORIG_FUR
+    if color_scheme is not None:
+        outline = color_scheme.get("outline", _ORIG_OUTLINE)
+        fur = color_scheme.get("fur", _ORIG_FUR)
 
     return (
         f'<g transform="translate({x},{y})">\n'
-        # ── Name above ──
         f'  <text x="{PET_W // 2}" y="14" text-anchor="middle" '
         f'font-size="7.5" fill="#bbb" font-family="monospace">{short_name}</text>\n'
-        # ── Hovering cat ──
-        f'  <g transform="translate(0,{cat_y})">\n'
+        f'  <g transform="translate(0,{cat_y})" style="--outline:{outline}; --fur:{fur};">\n'
         f'    <animateTransform attributeName="transform" type="translate" '
         f'additive="sum" values="0,0; 0,-5; 0,0" dur="{anim_dur}s" '
         f'begin="{anim_begin}s" repeatCount="indefinite" calcMode="spline" '
         f'keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>\n'
         f'    <g transform="scale({scale:.4f})">{inner}</g>\n'
         f'  </g>\n'
-        # ── Level below (fixed — does not oscillate) ──
         f'  <text x="{PET_W // 2}" y="{cat_y + PET_H + 14}" text-anchor="middle" '
         f'font-size="7.5" fill="#bbb" font-family="monospace">{level_text}</text>\n'
         f'</g>'

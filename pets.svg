@@ -10,8 +10,8 @@
 <g transform="translate(16,16)">
   <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">AlertBot</text>
   <g transform="translate(0,20)">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.77s" begin="0.63s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
-    <g transform="scale(6.0000)" filter="url(#cat-black)"><metadata>Made with Pixels to Svg https://codepen.io/shshaw/pen/XbxvNj</metadata>
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.98s" begin="0.05s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+    <g transform="scale(6.0000)" filter="url(#cat-cream)"><metadata>Made with Pixels to Svg https://codepen.io/shshaw/pen/XbxvNj</metadata>
 <path stroke="#9c5a3c" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
 <path stroke="#ff7e00" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
 <path stroke="#ffa3b1" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
@@ -23,8 +23,8 @@
 <g transform="translate(152,16)">
   <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">ProjectA</text>
   <g transform="translate(0,20)">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="4.0s" begin="1.69s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
-    <g transform="scale(6.0000)" filter="url(#cat-brown)"><metadata>Made with Pixels to Svg https://codepen.io/shshaw/pen/XbxvNj</metadata>
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.67s" begin="1.02s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+    <g transform="scale(6.0000)"><metadata>Made with Pixels to Svg https://codepen.io/shshaw/pen/XbxvNj</metadata>
 <path stroke="#9c5a3c" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
 <path stroke="#ff7e00" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
 <path stroke="#ffa3b1" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
@@ -36,8 +36,8 @@
 <g transform="translate(288,16)">
   <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">RainOracle</text>
   <g transform="translate(0,20)">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.62s" begin="1.79s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
-    <g transform="scale(6.0000)" filter="url(#cat-black)"><metadata>Made with Pixels to Svg https://codepen.io/shshaw/pen/XbxvNj</metadata>
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.26s" begin="1.11s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+    <g transform="scale(6.0000)" filter="url(#cat-brown)"><metadata>Made with Pixels to Svg https://codepen.io/shshaw/pen/XbxvNj</metadata>
 <path stroke="#9c5a3c" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
 <path stroke="#ff7e00" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
 <path stroke="#ffa3b1" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
@@ -49,8 +49,8 @@
 <g transform="translate(424,16)">
   <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">StiksTheGame</text>
   <g transform="translate(0,20)">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.47s" begin="0.14s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
-    <g transform="scale(6.0000)" filter="url(#cat-black)"><metadata>Made with Pixels to Svg https://codepen.io/shshaw/pen/XbxvNj</metadata>
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="2.6s" begin="0.3s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+    <g transform="scale(6.0000)" filter="url(#cat-brown)"><metadata>Made with Pixels to Svg https://codepen.io/shshaw/pen/XbxvNj</metadata>
 <path stroke="#9c5a3c" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
 <path stroke="#ff7e00" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
 <path stroke="#ffa3b1" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
@@ -62,8 +62,8 @@
 <g transform="translate(560,16)">
   <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">TopDownRacing</text>
   <g transform="translate(0,20)">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.05s" begin="0.77s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
-    <g transform="scale(6.0000)" filter="url(#cat-brown)"><metadata>Made with Pixels to Svg https://codepen.io/shshaw/pen/XbxvNj</metadata>
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="2.52s" begin="1.75s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+    <g transform="scale(6.0000)"><metadata>Made with Pixels to Svg https://codepen.io/shshaw/pen/XbxvNj</metadata>
 <path stroke="#9c5a3c" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
 <path stroke="#ff7e00" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
 <path stroke="#ffa3b1" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
@@ -75,8 +75,8 @@
 <g transform="translate(16,192)">
   <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">epat_cicd_nov5</text>
   <g transform="translate(0,20)">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.12s" begin="1.55s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
-    <g transform="scale(6.0000)" filter="url(#cat-brown)"><metadata>Made with Pixels to Svg https://codepen.io/shshaw/pen/XbxvNj</metadata>
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.34s" begin="1.49s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+    <g transform="scale(6.0000)"><metadata>Made with Pixels to Svg https://codepen.io/shshaw/pen/XbxvNj</metadata>
 <path stroke="#9c5a3c" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
 <path stroke="#ff7e00" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
 <path stroke="#ffa3b1" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
@@ -88,7 +88,7 @@
 <g transform="translate(152,192)">
   <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">mcp-servers</text>
   <g transform="translate(0,20)">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.79s" begin="1.23s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.84s" begin="0.91s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
     <g transform="scale(6.0000)" filter="url(#cat-red)"><metadata>Made with Pixels to Svg https://codepen.io/shshaw/pen/XbxvNj</metadata>
 <path stroke="#9c5a3c" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
 <path stroke="#ff7e00" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
@@ -101,8 +101,8 @@
 <g transform="translate(288,192)">
   <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">portfolio</text>
   <g transform="translate(0,20)">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.34s" begin="0.3s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
-    <g transform="scale(6.0000)"><metadata>Made with Pixels to Svg https://codepen.io/shshaw/pen/XbxvNj</metadata>
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.49s" begin="1.88s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+    <g transform="scale(6.0000)" filter="url(#cat-cream)"><metadata>Made with Pixels to Svg https://codepen.io/shshaw/pen/XbxvNj</metadata>
 <path stroke="#9c5a3c" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
 <path stroke="#ff7e00" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
 <path stroke="#ffa3b1" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
@@ -114,8 +114,8 @@
 <g transform="translate(424,192)">
   <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">portfolio-page</text>
   <g transform="translate(0,20)">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.64s" begin="0.46s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
-    <g transform="scale(6.0000)" filter="url(#cat-red)"><metadata>Made with Pixels to Svg https://codepen.io/shshaw/pen/XbxvNj</metadata>
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.16s" begin="1.67s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+    <g transform="scale(6.0000)" filter="url(#cat-brown)"><metadata>Made with Pixels to Svg https://codepen.io/shshaw/pen/XbxvNj</metadata>
 <path stroke="#9c5a3c" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
 <path stroke="#ff7e00" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
 <path stroke="#ffa3b1" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />

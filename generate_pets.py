@@ -14,66 +14,85 @@ HEADERS = {
     "X-GitHub-Api-Version": "2022-11-28",
 }
 
-# Commit count → pet stage thresholds (3 stages)
-STAGES = [
-    (0,   5,  "baby"),
-    (6,  50, "teen"),
-    (51, None,"adult"),
-]
-
-# SVG asset paths
-ASSETS_DIR = "assets"
-STAGE_SVG: dict[str, str] = {
-    "baby":  os.path.join(ASSETS_DIR, "baby.svg"),
-    "teen":  os.path.join(ASSETS_DIR, "teen.svg"),
-    "adult": os.path.join(ASSETS_DIR, "adult.svg"),
-}
+# SVG asset
+ASSETS_DIR   = "assets"
+CAT_SVG_PATH = os.path.join(ASSETS_DIR, "cat.svg")
 
 # Layout
-PET_W        = 120
-PET_H        = 120
-PETS_PER_ROW = 5
-PADDING      = 16
-LABEL_H      = 20   # space reserved below each pet for the repo name
+PET_W         = 120
+PET_H         = 120
+PETS_PER_ROW  = 5
+PADDING       = 16
+NAME_LABEL_H  = 20   # space above cat for repo name
+LEVEL_LABEL_H = 20   # space below cat for level
 
-# ── Load SVG files ─────────────────────────────────────────────────────────────
+# Cat color variants: filter_id -> SVG filter primitives (None = original orange, no filter)
+CAT_COLOR_FILTERS: dict[str, str | None] = {
+    "orange": None,
+    "gray": (
+        '<feColorMatrix type="saturate" values="0"/>'
+    ),
+    "brown": (
+        '<feColorMatrix type="hueRotate" values="-20"/>'
+        '<feColorMatrix type="saturate" values="0.5"/>'
+        '<feComponentTransfer>'
+        '<feFuncR type="linear" slope="0.85"/>'
+        '<feFuncG type="linear" slope="0.72"/>'
+        '<feFuncB type="linear" slope="0.60"/>'
+        '</feComponentTransfer>'
+    ),
+    "black": (
+        '<feColorMatrix type="saturate" values="0"/>'
+        '<feComponentTransfer>'
+        '<feFuncR type="linear" slope="0.22"/>'
+        '<feFuncG type="linear" slope="0.22"/>'
+        '<feFuncB type="linear" slope="0.22"/>'
+        '</feComponentTransfer>'
+    ),
+    "cream": (
+        '<feColorMatrix type="saturate" values="0.25"/>'
+        '<feComponentTransfer>'
+        '<feFuncR type="linear" slope="1.05" intercept="0.06"/>'
+        '<feFuncG type="linear" slope="0.95" intercept="0.03"/>'
+        '<feFuncB type="linear" slope="0.80"/>'
+        '</feComponentTransfer>'
+    ),
+    "red": (
+        '<feColorMatrix type="hueRotate" values="-30"/>'
+        '<feColorMatrix type="saturate" values="1.2"/>'
+    ),
+}
 
-def load_stage_svgs() -> dict[str, str]:
-    """Read each stage SVG from disk and return raw SVG content keyed by stage."""
-    svgs = {}
-    for stage, path in STAGE_SVG.items():
-        if not os.path.exists(path):
-            raise FileNotFoundError(
-                f"Missing SVG for stage '{stage}': expected at {path}\n"
-                f"Please add your SVG files to the '{ASSETS_DIR}/' folder."
-            )
-        with open(path, "r") as f:
-            svgs[stage] = f.read().strip()
-    return svgs
+# ── Load SVG file ──────────────────────────────────────────────────────────────
+
+def load_cat_svg() -> str:
+    if not os.path.exists(CAT_SVG_PATH):
+        raise FileNotFoundError(f"Missing cat SVG at {CAT_SVG_PATH}")
+    with open(CAT_SVG_PATH, "r") as f:
+        return f.read().strip()
 
 
 def embed_svg(
     raw_svg: str,
     x: int,
     y: int,
-    label: str,
+    name: str,
+    level: int | None = None,
     filter_id: str | None = None,
 ) -> str:
     """
-    Wrap a raw SVG into a <g> positioned at (x, y), scaled to PET_W x PET_H,
-    optionally apply a color-variant filter, and append a repo name label
-    beneath it.
+    Embed a cat SVG at (x, y) with:
+    - repo name label above the cat
+    - slow up-down hover animation on the cat
+    - level label below the cat
     """
-    # Strip XML declaration
     raw_svg = re.sub(r'<\?xml[^?]*\?>', '', raw_svg).strip()
 
-    # Extract inner content (everything between the outer <svg> tags)
     svg_open_end = raw_svg.index(">") + 1
     svg_close    = raw_svg.rindex("</svg>")
     inner        = raw_svg[svg_open_end:svg_close].strip()
 
-    # Derive original dimensions for scaling
-    vb         = re.search(r'viewBox=["\']([^"\']+)["\']', raw_svg)
+    vb          = re.search(r'viewBox=["\']([^"\']+)["\']', raw_svg)
     width_attr  = re.search(r'\bwidth=["\']([^"\'px]+)["\']', raw_svg)
     height_attr = re.search(r'\bheight=["\']([^"\'px]+)["\']', raw_svg)
 
@@ -85,20 +104,36 @@ def embed_svg(
         orig_w = float(width_attr.group(1))
         orig_h = float(height_attr.group(1))
     else:
-        orig_w = orig_h = 100.0   # safe fallback
+        orig_w = orig_h = 100.0
 
     scale = min(PET_W / orig_w, PET_H / orig_h)
 
     filter_attr = f' filter="url(#{filter_id})"' if filter_id else ""
+    short_name  = name if len(name) <= 14 else name[:13] + "…"
 
-    short_label = label if len(label) <= 14 else label[:13] + "…"
-    label_y     = PET_H + 14
+    # Randomise duration and start offset so cats don't all hover in sync
+    anim_dur   = round(random.uniform(2.5, 4.0), 2)
+    anim_begin = round(random.uniform(0.0, 2.0), 2)
+
+    cat_y      = NAME_LABEL_H
+    level_text = f"Lv {level}" if level is not None else ""
 
     return (
         f'<g transform="translate({x},{y})">\n'
-        f'  <g transform="scale({scale:.4f})"{filter_attr}>{inner}</g>\n'
-        f'  <text x="{PET_W // 2}" y="{label_y}" text-anchor="middle" '
-        f'font-size="7.5" fill="#bbb" font-family="monospace">{short_label}</text>\n'
+        # ── Name above ──
+        f'  <text x="{PET_W // 2}" y="14" text-anchor="middle" '
+        f'font-size="7.5" fill="#bbb" font-family="monospace">{short_name}</text>\n'
+        # ── Hovering cat ──
+        f'  <g transform="translate(0,{cat_y})">\n'
+        f'    <animateTransform attributeName="transform" type="translate" '
+        f'additive="sum" values="0,0; 0,-5; 0,0" dur="{anim_dur}s" '
+        f'begin="{anim_begin}s" repeatCount="indefinite" calcMode="spline" '
+        f'keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>\n'
+        f'    <g transform="scale({scale:.4f})"{filter_attr}>{inner}</g>\n'
+        f'  </g>\n'
+        # ── Level below (fixed — does not oscillate) ──
+        f'  <text x="{PET_W // 2}" y="{cat_y + PET_H + 14}" text-anchor="middle" '
+        f'font-size="7.5" fill="#bbb" font-family="monospace">{level_text}</text>\n'
         f'</g>'
     )
 
@@ -138,7 +173,6 @@ def get_commit_count(repo_full_name: str) -> int:
         last_part = [p for p in link.split(",") if 'rel="last"' in p][0]
         return int(last_part.split("page=")[-1].split(">")[0])
 
-    # Fewer than per_page=1 result → fetch all and count
     all_r = requests.get(
         f"https://api.github.com/repos/{repo_full_name}/commits",
         headers=HEADERS,
@@ -147,24 +181,9 @@ def get_commit_count(repo_full_name: str) -> int:
     all_r.raise_for_status()
     return len(all_r.json())
 
-
-def get_stage(commit_count: int) -> str:
-    for _low, high, stage in STAGES:
-        if high is None or commit_count <= high:
-            return stage
-    return "adult"
-
 # ── SVG assembly ──────────────────────────────────────────────────────────────
 
-# Per-stage hue-rotation values (in degrees) used to create
-# multiple color variants for each pet stage.
-STAGE_FILTER_DEGREES: dict[str, list[int]] = {
-    "baby":  [0, 40, 80, 160],
-    "teen":  [0, 60, 120, 240],
-    "adult": [0, 45, 135, 270],
-}
-
-def build_combined_svg(pets: list[dict], stage_svgs: dict[str, str]) -> str:
+def build_combined_svg(pets: list[dict], cat_svg: str) -> str:
     if not pets:
         return (
             '<svg xmlns="http://www.w3.org/2000/svg" width="200" height="50">'
@@ -174,7 +193,7 @@ def build_combined_svg(pets: list[dict], stage_svgs: dict[str, str]) -> str:
 
     cols    = min(len(pets), PETS_PER_ROW)
     rows    = (len(pets) + cols - 1) // cols
-    cell_h  = PET_H + LABEL_H
+    cell_h  = NAME_LABEL_H + PET_H + LEVEL_LABEL_H
     total_w = cols * PET_W + (cols + 1) * PADDING
     total_h = rows * cell_h + (rows + 1) * PADDING
 
@@ -183,48 +202,32 @@ def build_combined_svg(pets: list[dict], stage_svgs: dict[str, str]) -> str:
         f'<rect width="{total_w}" height="{total_h}" fill="#0d1117" rx="12"/>',
     ]
 
-    # Define color-variant filters once in <defs> and keep track of
-    # the generated filter IDs per stage so we can randomly choose
-    # a different type within each category.
-    stage_filter_ids: dict[str, list[str]] = {}
-    defs_parts: list[str] = ["<defs>"]
-    for stage, degrees in STAGE_FILTER_DEGREES.items():
-        ids_for_stage: list[str] = []
-        for deg in degrees:
-            filter_id = f"pet-{stage}-hue-{deg}"
-            ids_for_stage.append(filter_id)
-            defs_parts.append(
-                f'<filter id="{filter_id}">'
-                f'<feColorMatrix type="hueRotate" values="{deg}"/>'
-                f'</filter>'
-            )
-        stage_filter_ids[stage] = ids_for_stage
+    # Emit filter defs for each color variant
+    defs_parts = ["<defs>"]
+    for variant, primitives in CAT_COLOR_FILTERS.items():
+        if primitives is not None:
+            defs_parts.append(f'<filter id="cat-{variant}">{primitives}</filter>')
     defs_parts.append("</defs>")
     parts.extend(defs_parts)
+
+    all_variants = list(CAT_COLOR_FILTERS.keys())
 
     for i, pet in enumerate(pets):
         col = i % cols
         row = i // cols
         x   = PADDING + col * (PET_W + PADDING)
-        y   = PADDING + row * (cell_h  + PADDING)
+        y   = PADDING + row * (cell_h + PADDING)
 
-        stage = pet["stage"]
-        filter_choices = stage_filter_ids.get(stage, [])
-        filter_id = random.choice(filter_choices) if filter_choices else None
-
-        # Show repo name plus its commit count as a "level".
-        # Example: "my-repo · Lv 42"
-        commits = pet.get("commits")
-        level_label = (
-            f'{pet["name"]} · Lv {commits}' if commits is not None else pet["name"]
-        )
+        variant   = random.choice(all_variants)
+        filter_id = f"cat-{variant}" if CAT_COLOR_FILTERS[variant] is not None else None
 
         parts.append(
             embed_svg(
-                stage_svgs[stage],
+                cat_svg,
                 x,
                 y,
-                level_label,
+                pet["name"],
+                level=pet.get("commits"),
                 filter_id=filter_id,
             )
         )
@@ -235,8 +238,8 @@ def build_combined_svg(pets: list[dict], stage_svgs: dict[str, str]) -> str:
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main(output_path: str = "pets.svg") -> None:
-    stage_svgs = load_stage_svgs()
-    print(f"✅ Loaded stage SVGs: {list(stage_svgs.keys())}")
+    cat_svg = load_cat_svg()
+    print("✅ Loaded cat SVG")
 
     print(f"👤 Fetching repos for: {USERNAME}")
     repos = get_all_repos()
@@ -248,15 +251,12 @@ def main(output_path: str = "pets.svg") -> None:
         if name == USERNAME:   # skip the profile repo itself
             continue
         count = get_commit_count(repo["full_name"])
-        stage = get_stage(count)
-        print(f"  {name}: {count} commits → {stage}")
-        pets.append({"name": name, "stage": stage, "commits": count})
+        print(f"  {name}: {count} commits")
+        pets.append({"name": name, "commits": count})
 
-    # Sort: most evolved first, then alphabetical within stage
-    stage_order = {"adult": 0, "teen": 1, "baby": 2}
-    pets.sort(key=lambda p: (stage_order[p["stage"]], p["name"]))
+    pets.sort(key=lambda p: p["name"])
 
-    svg = build_combined_svg(pets, stage_svgs)
+    svg = build_combined_svg(pets, cat_svg)
     with open(output_path, "w") as f:
         f.write(svg)
 

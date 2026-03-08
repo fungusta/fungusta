@@ -1,4 +1,5 @@
 import os
+import random
 import re
 import requests
 
@@ -15,9 +16,9 @@ HEADERS = {
 
 # Commit count → pet stage thresholds (3 stages)
 STAGES = [
-    (0,   50,  "baby"),
-    (51,  200, "teen"),
-    (201, None,"adult"),
+    (0,   5,  "baby"),
+    (6,  50, "teen"),
+    (51, None,"adult"),
 ]
 
 # SVG asset paths
@@ -51,10 +52,17 @@ def load_stage_svgs() -> dict[str, str]:
     return svgs
 
 
-def embed_svg(raw_svg: str, x: int, y: int, label: str) -> str:
+def embed_svg(
+    raw_svg: str,
+    x: int,
+    y: int,
+    label: str,
+    filter_id: str | None = None,
+) -> str:
     """
     Wrap a raw SVG into a <g> positioned at (x, y), scaled to PET_W x PET_H,
-    and append a repo name label beneath it.
+    optionally apply a color-variant filter, and append a repo name label
+    beneath it.
     """
     # Strip XML declaration
     raw_svg = re.sub(r'<\?xml[^?]*\?>', '', raw_svg).strip()
@@ -81,12 +89,14 @@ def embed_svg(raw_svg: str, x: int, y: int, label: str) -> str:
 
     scale = min(PET_W / orig_w, PET_H / orig_h)
 
+    filter_attr = f' filter="url(#{filter_id})"' if filter_id else ""
+
     short_label = label if len(label) <= 14 else label[:13] + "…"
     label_y     = PET_H + 14
 
     return (
         f'<g transform="translate({x},{y})">\n'
-        f'  <g transform="scale({scale:.4f})">{inner}</g>\n'
+        f'  <g transform="scale({scale:.4f})"{filter_attr}>{inner}</g>\n'
         f'  <text x="{PET_W // 2}" y="{label_y}" text-anchor="middle" '
         f'font-size="7.5" fill="#bbb" font-family="monospace">{short_label}</text>\n'
         f'</g>'
@@ -146,6 +156,14 @@ def get_stage(commit_count: int) -> str:
 
 # ── SVG assembly ──────────────────────────────────────────────────────────────
 
+# Per-stage hue-rotation values (in degrees) used to create
+# multiple color variants for each pet stage.
+STAGE_FILTER_DEGREES: dict[str, list[int]] = {
+    "baby":  [0, 40, 80, 160],
+    "teen":  [0, 60, 120, 240],
+    "adult": [0, 45, 135, 270],
+}
+
 def build_combined_svg(pets: list[dict], stage_svgs: dict[str, str]) -> str:
     if not pets:
         return (
@@ -165,12 +183,51 @@ def build_combined_svg(pets: list[dict], stage_svgs: dict[str, str]) -> str:
         f'<rect width="{total_w}" height="{total_h}" fill="#0d1117" rx="12"/>',
     ]
 
+    # Define color-variant filters once in <defs> and keep track of
+    # the generated filter IDs per stage so we can randomly choose
+    # a different type within each category.
+    stage_filter_ids: dict[str, list[str]] = {}
+    defs_parts: list[str] = ["<defs>"]
+    for stage, degrees in STAGE_FILTER_DEGREES.items():
+        ids_for_stage: list[str] = []
+        for deg in degrees:
+            filter_id = f"pet-{stage}-hue-{deg}"
+            ids_for_stage.append(filter_id)
+            defs_parts.append(
+                f'<filter id="{filter_id}">'
+                f'<feColorMatrix type="hueRotate" values="{deg}"/>'
+                f'</filter>'
+            )
+        stage_filter_ids[stage] = ids_for_stage
+    defs_parts.append("</defs>")
+    parts.extend(defs_parts)
+
     for i, pet in enumerate(pets):
         col = i % cols
         row = i // cols
         x   = PADDING + col * (PET_W + PADDING)
         y   = PADDING + row * (cell_h  + PADDING)
-        parts.append(embed_svg(stage_svgs[pet["stage"]], x, y, pet["name"]))
+
+        stage = pet["stage"]
+        filter_choices = stage_filter_ids.get(stage, [])
+        filter_id = random.choice(filter_choices) if filter_choices else None
+
+        # Show repo name plus its commit count as a "level".
+        # Example: "my-repo · Lv 42"
+        commits = pet.get("commits")
+        level_label = (
+            f'{pet["name"]} · Lv {commits}' if commits is not None else pet["name"]
+        )
+
+        parts.append(
+            embed_svg(
+                stage_svgs[stage],
+                x,
+                y,
+                level_label,
+                filter_id=filter_id,
+            )
+        )
 
     parts.append("</svg>")
     return "\n".join(parts)
@@ -193,7 +250,7 @@ def main(output_path: str = "pets.svg") -> None:
         count = get_commit_count(repo["full_name"])
         stage = get_stage(count)
         print(f"  {name}: {count} commits → {stage}")
-        pets.append({"name": name, "stage": stage})
+        pets.append({"name": name, "stage": stage, "commits": count})
 
     # Sort: most evolved first, then alphabetical within stage
     stage_order = {"adult": 0, "teen": 1, "baby": 2}

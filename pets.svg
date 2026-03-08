@@ -1,91 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="696" height="368">
 <rect width="696" height="368" fill="#0d1117" rx="12"/>
 <g transform="translate(16,16)">
-  <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">AlertBot</text>
-  <g transform="translate(0,20)">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.35s" begin="1.68s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
-    <g transform="scale(6.0000)"><style>
-:root {
-  --outline: #222222;
-  --fur: #3b3b3b;
-  --nose: #ffa3b1;
-  --highlight: #ffffff;
-  --eyes: #000000;
-}
-</style>
-
-<path stroke="var(--outline)" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
-
-<path stroke="var(--fur)" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
-
-<path stroke="var(--nose)" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
-
-<path stroke="var(--highlight)" d="M8 6h1M10 6h1M8 9h1M10 9h1M7 10h5M5 15h1M7 15h1M11 15h1M13 15h1" />
-
-<path stroke="var(--eyes)" d="M3 8h2M6 8h2M11 8h2M14 8h2M6 9h2M11 9h2M3 10h2M14 10h2" /></g>
-  </g>
-  <text x="60" y="154" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">Lv 5</text>
-</g>
-<g transform="translate(152,16)">
-  <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">ProjectA</text>
-  <g transform="translate(0,20)">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="2.97s" begin="1.74s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
-    <g transform="scale(6.0000)"><style>
-:root {
-  --outline: #222222;
-  --fur: #3b3b3b;
-  --nose: #ffa3b1;
-  --highlight: #ffffff;
-  --eyes: #000000;
-}
-</style>
-
-<path stroke="var(--outline)" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
-
-<path stroke="var(--fur)" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
-
-<path stroke="var(--nose)" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
-
-<path stroke="var(--highlight)" d="M8 6h1M10 6h1M8 9h1M10 9h1M7 10h5M5 15h1M7 15h1M11 15h1M13 15h1" />
-
-<path stroke="var(--eyes)" d="M3 8h2M6 8h2M11 8h2M14 8h2M6 9h2M11 9h2M3 10h2M14 10h2" /></g>
-  </g>
-  <text x="60" y="154" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">Lv 1</text>
-</g>
-<g transform="translate(288,16)">
-  <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">RainOracle</text>
-  <g transform="translate(0,20)">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.29s" begin="0.95s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
-    <g transform="scale(6.0000)"><style>
-:root {
-  --outline: #555555;
-  --fur: #bdbdbd;
-  --nose: #ffa3b1;
-  --highlight: #ffffff;
-  --eyes: #000000;
-}
-</style>
-
-<path stroke="var(--outline)" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
-
-<path stroke="var(--fur)" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
-
-<path stroke="var(--nose)" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
-
-<path stroke="var(--highlight)" d="M8 6h1M10 6h1M8 9h1M10 9h1M7 10h5M5 15h1M7 15h1M11 15h1M13 15h1" />
-
-<path stroke="var(--eyes)" d="M3 8h2M6 8h2M11 8h2M14 8h2M6 9h2M11 9h2M3 10h2M14 10h2" /></g>
-  </g>
-  <text x="60" y="154" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">Lv 11</text>
-</g>
-<g transform="translate(424,16)">
   <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">StiksTheGame</text>
   <g transform="translate(0,20)">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.19s" begin="1.67s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="2.97s" begin="0.35s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
     <g transform="scale(6.0000)"><style>
 :root {
-  --outline: #6d4c41;
-  --fur: #f5e0c3;
+  --outline: #9c5a3c;
+  --fur: #ff7e00;
   --nose: #ffa3b1;
   --highlight: #ffffff;
   --eyes: #000000;
@@ -104,14 +26,40 @@
   </g>
   <text x="60" y="154" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">Lv 110</text>
 </g>
-<g transform="translate(560,16)">
-  <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">TopDownRacing</text>
+<g transform="translate(152,16)">
+  <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">portfolio-page</text>
   <g transform="translate(0,20)">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.06s" begin="0.45s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="2.78s" begin="1.64s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
     <g transform="scale(6.0000)"><style>
 :root {
-  --outline: #222222;
-  --fur: #3b3b3b;
+  --outline: #9c5a3c;
+  --fur: #ff7e00;
+  --nose: #ffa3b1;
+  --highlight: #ffffff;
+  --eyes: #000000;
+}
+</style>
+
+<path stroke="var(--outline)" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
+
+<path stroke="var(--fur)" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
+
+<path stroke="var(--nose)" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
+
+<path stroke="var(--highlight)" d="M8 6h1M10 6h1M8 9h1M10 9h1M7 10h5M5 15h1M7 15h1M11 15h1M13 15h1" />
+
+<path stroke="var(--eyes)" d="M3 8h2M6 8h2M11 8h2M14 8h2M6 9h2M11 9h2M3 10h2M14 10h2" /></g>
+  </g>
+  <text x="60" y="154" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">Lv 39</text>
+</g>
+<g transform="translate(288,16)">
+  <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">TopDownRacing</text>
+  <g transform="translate(0,20)">
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.91s" begin="1.85s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+    <g transform="scale(6.0000)"><style>
+:root {
+  --outline: #9c5a3c;
+  --fur: #ff7e00;
   --nose: #ffa3b1;
   --highlight: #ffffff;
   --eyes: #000000;
@@ -130,14 +78,40 @@
   </g>
   <text x="60" y="154" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">Lv 13</text>
 </g>
-<g transform="translate(16,192)">
-  <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">epat_cicd_nov5</text>
+<g transform="translate(424,16)">
+  <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">RainOracle</text>
   <g transform="translate(0,20)">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.03s" begin="0.54s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.67s" begin="0.56s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
     <g transform="scale(6.0000)"><style>
 :root {
-  --outline: #555555;
-  --fur: #bdbdbd;
+  --outline: #9c5a3c;
+  --fur: #ff7e00;
+  --nose: #ffa3b1;
+  --highlight: #ffffff;
+  --eyes: #000000;
+}
+</style>
+
+<path stroke="var(--outline)" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
+
+<path stroke="var(--fur)" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
+
+<path stroke="var(--nose)" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
+
+<path stroke="var(--highlight)" d="M8 6h1M10 6h1M8 9h1M10 9h1M7 10h5M5 15h1M7 15h1M11 15h1M13 15h1" />
+
+<path stroke="var(--eyes)" d="M3 8h2M6 8h2M11 8h2M14 8h2M6 9h2M11 9h2M3 10h2M14 10h2" /></g>
+  </g>
+  <text x="60" y="154" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">Lv 11</text>
+</g>
+<g transform="translate(560,16)">
+  <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">epat_cicd_nov5</text>
+  <g transform="translate(0,20)">
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.64s" begin="1.92s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+    <g transform="scale(6.0000)"><style>
+:root {
+  --outline: #9c5a3c;
+  --fur: #ff7e00;
   --nose: #ffa3b1;
   --highlight: #ffffff;
   --eyes: #000000;
@@ -156,14 +130,14 @@
   </g>
   <text x="60" y="154" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">Lv 8</text>
 </g>
-<g transform="translate(152,192)">
-  <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">mcp-servers</text>
+<g transform="translate(16,192)">
+  <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">AlertBot</text>
   <g transform="translate(0,20)">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.99s" begin="1.74s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.26s" begin="1.04s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
     <g transform="scale(6.0000)"><style>
 :root {
-  --outline: #222222;
-  --fur: #3b3b3b;
+  --outline: #9c5a3c;
+  --fur: #ff7e00;
   --nose: #ffa3b1;
   --highlight: #ffffff;
   --eyes: #000000;
@@ -180,16 +154,16 @@
 
 <path stroke="var(--eyes)" d="M3 8h2M6 8h2M11 8h2M14 8h2M6 9h2M11 9h2M3 10h2M14 10h2" /></g>
   </g>
-  <text x="60" y="154" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">Lv 2</text>
+  <text x="60" y="154" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">Lv 5</text>
 </g>
-<g transform="translate(288,192)">
+<g transform="translate(152,192)">
   <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">portfolio</text>
   <g transform="translate(0,20)">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="2.96s" begin="0.44s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="2.76s" begin="1.06s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
     <g transform="scale(6.0000)"><style>
 :root {
-  --outline: #555555;
-  --fur: #bdbdbd;
+  --outline: #9c5a3c;
+  --fur: #ff7e00;
   --nose: #ffa3b1;
   --highlight: #ffffff;
   --eyes: #000000;
@@ -208,14 +182,14 @@
   </g>
   <text x="60" y="154" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">Lv 3</text>
 </g>
-<g transform="translate(424,192)">
-  <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">portfolio-page</text>
+<g transform="translate(288,192)">
+  <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">mcp-servers</text>
   <g transform="translate(0,20)">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="2.56s" begin="0.8s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="2.64s" begin="0.58s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
     <g transform="scale(6.0000)"><style>
 :root {
-  --outline: #777777;
-  --fur: #ffffff;
+  --outline: #9c5a3c;
+  --fur: #ff7e00;
   --nose: #ffa3b1;
   --highlight: #ffffff;
   --eyes: #000000;
@@ -232,6 +206,32 @@
 
 <path stroke="var(--eyes)" d="M3 8h2M6 8h2M11 8h2M14 8h2M6 9h2M11 9h2M3 10h2M14 10h2" /></g>
   </g>
-  <text x="60" y="154" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">Lv 39</text>
+  <text x="60" y="154" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">Lv 2</text>
+</g>
+<g transform="translate(424,192)">
+  <text x="60" y="14" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">ProjectA</text>
+  <g transform="translate(0,20)">
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.58s" begin="0.93s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+    <g transform="scale(6.0000)"><style>
+:root {
+  --outline: #9c5a3c;
+  --fur: #ff7e00;
+  --nose: #ffa3b1;
+  --highlight: #ffffff;
+  --eyes: #000000;
+}
+</style>
+
+<path stroke="var(--outline)" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
+
+<path stroke="var(--fur)" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
+
+<path stroke="var(--nose)" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
+
+<path stroke="var(--highlight)" d="M8 6h1M10 6h1M8 9h1M10 9h1M7 10h5M5 15h1M7 15h1M11 15h1M13 15h1" />
+
+<path stroke="var(--eyes)" d="M3 8h2M6 8h2M11 8h2M14 8h2M6 9h2M11 9h2M3 10h2M14 10h2" /></g>
+  </g>
+  <text x="60" y="154" text-anchor="middle" font-size="7.5" fill="#bbb" font-family="monospace">Lv 1</text>
 </g>
 </svg>

@@ -1,5 +1,7 @@
 # Peter Joseph Fung Yu Ren
 
+![My GitHub Pets](./pets.svg)
+
 Hi! I'm Peter
 
 I AM... 

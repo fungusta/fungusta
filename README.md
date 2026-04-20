@@ -20,6 +20,6 @@ These are my three highest-level cats right now:
 
 <!-- TOP_PETS_START -->
 - **[StiksTheGame](https://github.com/fungusta/StiksTheGame)** – level 110
-- **[wedding-bingo](https://github.com/fungusta/wedding-bingo)** – level 52
+- **[wedding-bingo](https://github.com/fungusta/wedding-bingo)** – level 67
 - **[portfolio-page](https://github.com/fungusta/portfolio-page)** – level 49
 <!-- TOP_PETS_END -->

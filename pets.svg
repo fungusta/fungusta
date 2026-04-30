@@ -3,7 +3,7 @@
 <g transform="translate(20,20)">
   <text x="60" y="20" text-anchor="middle" font-size="11" font-weight="600" fill="#e0e0e0" font-family="monospace">StiksTheGame</text>
   <g transform="translate(0,28)" style="--outline:#555555; --fur:#aaaaaa;">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.7s" begin="1.45s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.9s" begin="1.77s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
     <g transform="scale(6.0000)"><path stroke="var(--outline)" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
   <path stroke="var(--fur)" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
   <path stroke="#ffa3b1" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
@@ -14,8 +14,8 @@
 </g>
 <g transform="translate(160,20)">
   <text x="60" y="20" text-anchor="middle" font-size="11" font-weight="600" fill="#e0e0e0" font-family="monospace">wedding-bingo</text>
-  <g transform="translate(0,28)" style="--outline:#9c5a3c; --fur:#ff7e00;">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.77s" begin="1.24s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+  <g transform="translate(0,28)" style="--outline:#999999; --fur:#eeeeee;">
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.4s" begin="1.99s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
     <g transform="scale(6.0000)"><path stroke="var(--outline)" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
   <path stroke="var(--fur)" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
   <path stroke="#ffa3b1" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
@@ -27,7 +27,7 @@
 <g transform="translate(300,20)">
   <text x="60" y="20" text-anchor="middle" font-size="11" font-weight="600" fill="#e0e0e0" font-family="monospace">portfolio-page</text>
   <g transform="translate(0,28)" style="--outline:#9c5a3c; --fur:#ff7e00;">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.57s" begin="1.59s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.13s" begin="1.95s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
     <g transform="scale(6.0000)"><path stroke="var(--outline)" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
   <path stroke="var(--fur)" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
   <path stroke="#ffa3b1" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
@@ -38,8 +38,8 @@
 </g>
 <g transform="translate(440,20)">
   <text x="60" y="20" text-anchor="middle" font-size="11" font-weight="600" fill="#e0e0e0" font-family="monospace">NextStop</text>
-  <g transform="translate(0,28)" style="--outline:#555555; --fur:#aaaaaa;">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.0s" begin="1.87s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+  <g transform="translate(0,28)" style="--outline:#5c3317; --fur:#9b5e2a;">
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.94s" begin="1.76s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
     <g transform="scale(6.0000)"><path stroke="var(--outline)" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
   <path stroke="var(--fur)" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
   <path stroke="#ffa3b1" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
@@ -50,8 +50,8 @@
 </g>
 <g transform="translate(580,20)">
   <text x="60" y="20" text-anchor="middle" font-size="11" font-weight="600" fill="#e0e0e0" font-family="monospace">TopDownRacing</text>
-  <g transform="translate(0,28)" style="--outline:#999999; --fur:#eeeeee;">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.34s" begin="1.24s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+  <g transform="translate(0,28)" style="--outline:#6d4c41; --fur:#f5e0c3;">
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="2.71s" begin="0.96s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
     <g transform="scale(6.0000)"><path stroke="var(--outline)" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
   <path stroke="var(--fur)" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
   <path stroke="#ffa3b1" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
@@ -62,8 +62,8 @@
 </g>
 <g transform="translate(20,214)">
   <text x="60" y="20" text-anchor="middle" font-size="11" font-weight="600" fill="#e0e0e0" font-family="monospace">RainOracle</text>
-  <g transform="translate(0,28)" style="--outline:#5c3317; --fur:#9b5e2a;">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="2.9s" begin="1.95s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+  <g transform="translate(0,28)" style="--outline:#999999; --fur:#eeeeee;">
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.67s" begin="0.81s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
     <g transform="scale(6.0000)"><path stroke="var(--outline)" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
   <path stroke="var(--fur)" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
   <path stroke="#ffa3b1" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
@@ -74,8 +74,8 @@
 </g>
 <g transform="translate(160,214)">
   <text x="60" y="20" text-anchor="middle" font-size="11" font-weight="600" fill="#e0e0e0" font-family="monospace">epat_cicd_nov5</text>
-  <g transform="translate(0,28)" style="--outline:#5c3317; --fur:#9b5e2a;">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.15s" begin="0.31s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+  <g transform="translate(0,28)" style="--outline:#000000; --fur:#333333;">
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.79s" begin="1.31s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
     <g transform="scale(6.0000)"><path stroke="var(--outline)" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
   <path stroke="var(--fur)" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
   <path stroke="#ffa3b1" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
@@ -87,7 +87,7 @@
 <g transform="translate(300,214)">
   <text x="60" y="20" text-anchor="middle" font-size="11" font-weight="600" fill="#e0e0e0" font-family="monospace">AlertBot</text>
   <g transform="translate(0,28)" style="--outline:#000000; --fur:#333333;">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="2.52s" begin="0.63s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.86s" begin="1.73s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
     <g transform="scale(6.0000)"><path stroke="var(--outline)" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
   <path stroke="var(--fur)" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
   <path stroke="#ffa3b1" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
@@ -98,8 +98,8 @@
 </g>
 <g transform="translate(440,214)">
   <text x="60" y="20" text-anchor="middle" font-size="11" font-weight="600" fill="#e0e0e0" font-family="monospace">portfolio</text>
-  <g transform="translate(0,28)" style="--outline:#5c3317; --fur:#9b5e2a;">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.04s" begin="0.66s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+  <g transform="translate(0,28)" style="--outline:#000000; --fur:#333333;">
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.7s" begin="0.59s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
     <g transform="scale(6.0000)"><path stroke="var(--outline)" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
   <path stroke="var(--fur)" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
   <path stroke="#ffa3b1" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
@@ -110,8 +110,8 @@
 </g>
 <g transform="translate(580,214)">
   <text x="60" y="20" text-anchor="middle" font-size="11" font-weight="600" fill="#e0e0e0" font-family="monospace">mcp-servers</text>
-  <g transform="translate(0,28)" style="--outline:#5c3317; --fur:#9b5e2a;">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.87s" begin="1.76s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+  <g transform="translate(0,28)" style="--outline:#6d4c41; --fur:#f5e0c3;">
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.35s" begin="0.21s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
     <g transform="scale(6.0000)"><path stroke="var(--outline)" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
   <path stroke="var(--fur)" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
   <path stroke="#ffa3b1" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />
@@ -122,8 +122,8 @@
 </g>
 <g transform="translate(20,408)">
   <text x="60" y="20" text-anchor="middle" font-size="11" font-weight="600" fill="#e0e0e0" font-family="monospace">ProjectA</text>
-  <g transform="translate(0,28)" style="--outline:#000000; --fur:#333333;">
-    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.6s" begin="1.99s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+  <g transform="translate(0,28)" style="--outline:#6d4c41; --fur:#f5e0c3;">
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0,0; 0,-5; 0,0" dur="3.26s" begin="1.09s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
     <g transform="scale(6.0000)"><path stroke="var(--outline)" d="M5 3h2M12 3h2M5 4h1M7 4h1M11 4h1M13 4h1M5 5h1M8 5h3M13 5h1M5 6h1M13 6h1M4 7h1M14 7h1M4 9h1M14 9h1M5 10h1M13 10h1M6 11h2M11 11h2M15 11h1M6 12h1M12 12h1M14 12h1M5 13h2M12 13h2M4 14h1M6 14h1M8 14h1M10 14h1M12 14h1M14 14h1M4 15h1M6 15h1M8 15h3M12 15h1M14 15h1M5 16h4M10 16h4" />
   <path stroke="var(--fur)" d="M6 4h1M12 4h1M7 5h1M11 5h1M7 6h1M9 6h1M11 6h1M5 7h9M5 8h1M8 8h3M13 8h1M5 9h1M13 9h1M6 10h1M12 10h1M8 11h3M7 12h5M7 13h5M5 14h1M7 14h1M9 14h1M11 14h1M13 14h1" />
   <path stroke="#ffa3b1" d="M6 5h1M12 5h1M6 6h1M12 6h1M9 9h1" />

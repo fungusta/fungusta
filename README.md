@@ -20,6 +20,6 @@ These are my three highest-level cats right now:
 
 <!-- TOP_PETS_START -->
 - **[StiksTheGame](https://github.com/fungusta/StiksTheGame)** – level 110
-- **[portfolio-page](https://github.com/fungusta/portfolio-page)** – level 49
+- **[portfolio-page](https://github.com/fungusta/portfolio-page)** – level 50
 - **[table-toppers](https://github.com/fungusta/table-toppers)** – level 35
 <!-- TOP_PETS_END -->

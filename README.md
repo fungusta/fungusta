@@ -19,7 +19,7 @@ This project generates the SVG automatically using the GitHub API.
 These are my three highest-level cats right now:
 
 <!-- TOP_PETS_START -->
-- **[cat-type](https://github.com/fungusta/cat-type)** – level 279
+- **[cat-type](https://github.com/fungusta/cat-type)** – level 281
 - **[StiksTheGame](https://github.com/fungusta/StiksTheGame)** – level 110
-- **[portfolio-page](https://github.com/fungusta/portfolio-page)** – level 61
+- **[portfolio-page](https://github.com/fungusta/portfolio-page)** – level 63
 <!-- TOP_PETS_END -->
